@@ -69,7 +69,7 @@
             top: 0;
             z-index: 100;
             background: white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid var(--border-light);
             padding: 16px 0;
         }
 
@@ -90,7 +90,7 @@
         }
 
         .brand-icon {
-            background: linear-gradient(145deg, var(--accent-cyan), #06748f);
+            background: var(--accent-cyan);
             width: 48px;
             height: 48px;
             border-radius: 10px;
@@ -99,7 +99,6 @@
             justify-content: center;
             font-size: 24px;
             color: white;
-            box-shadow: 0 4px 0 #045a70, 0 8px 10px rgba(0, 0, 0, 0.2);
         }
 
         .btn {
@@ -113,31 +112,15 @@
             font-size: 16px;
             border-radius: 10px;
             text-decoration: none;
-            transition: transform 0.1s, box-shadow 0.1s;
+            transition: background 0.2s ease;
             border: none;
             cursor: pointer;
-        }
-
-        .btn-wa {
-            background: linear-gradient(145deg, #25D366, #20b359);
-            color: #0f2b1d;
-            box-shadow: 0 6px 0 #188c46, 0 10px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-wa:active {
-            transform: translateY(6px);
-            box-shadow: 0 0 0 #188c46, 0 0 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-primary {
-            background: linear-gradient(145deg, #1e293b, #0f172a);
+            background: var(--accent-cyan);
             color: white;
-            box-shadow: 0 6px 0 #000000, 0 10px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .btn-primary:active {
-            transform: translateY(6px);
-            box-shadow: 0 0 0 #000000, 0 0 0 rgba(0, 0, 0, 0.2);
+        .btn:hover {
+            background: #06748f;
         }
 
         .btn-large {
@@ -148,7 +131,7 @@
 
         .hero {
             padding: 80px 0 100px;
-            background: linear-gradient(145deg, #ffffff, #fef9e8);
+            background: #f8fafc;
             text-align: center;
         }
 
@@ -156,14 +139,13 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: linear-gradient(145deg, #eef2ff, #ffffff);
+            background: #eef2ff;
             padding: 8px 20px;
             border-radius: 10px;
             font-weight: 700;
             font-size: 14px;
             color: var(--accent-cyan);
             margin-bottom: 24px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(255, 255, 255, 0.8);
         }
 
         .hero h1 {
@@ -171,7 +153,6 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 24px;
-            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .hero-description {
@@ -200,7 +181,6 @@
             height: 6px;
             border-radius: 10px;
             background: #cbd5e1;
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
             transition: all 0.3s;
             animation: pulseMove 2s infinite ease-in-out;
         }
@@ -253,14 +233,10 @@
             font-weight: 800;
             text-align: center;
             margin-bottom: 56px;
-            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .title-accent {
-            background: linear-gradient(120deg, var(--accent-cyan), var(--accent-purple));
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+            color: var(--accent-cyan);
         }
 
         .features-grid {
@@ -271,17 +247,16 @@
         }
 
         .feature-card {
-            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            background: #ffffff;
+            border: 1px solid var(--border-light);
             border-radius: 10px;
             padding: 32px 24px;
             transition: var(--transition);
             text-align: center;
-            box-shadow: 0 8px 0 var(--border-light), 0 15px 20px rgba(0, 0, 0, 0.1);
         }
 
         .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 0 var(--border-light), 0 25px 30px rgba(0, 0, 0, 0.15);
+            background: #f8fafc;
         }
 
         .icon-box {
@@ -293,31 +268,30 @@
             align-items: center;
             justify-content: center;
             font-size: 32px;
-            box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
         .c-pink .icon-box {
-            background: linear-gradient(145deg, #ffe4ec, #ffd1e0);
+            background: #ffe4ec;
             color: var(--accent-pink);
         }
 
         .c-cyan .icon-box {
-            background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+            background: #e0f7fa;
             color: var(--accent-cyan);
         }
 
         .c-purple .icon-box {
-            background: linear-gradient(145deg, #ede9fe, #ddd6fe);
+            background: #ede9fe;
             color: var(--accent-purple);
         }
 
         .c-yellow .icon-box {
-            background: linear-gradient(145deg, #fef9e3, #fef08a);
+            background: #fef9e3;
             color: #b45309;
         }
 
         .c-green .icon-box {
-            background: linear-gradient(145deg, #dcfce7, #bbf7d0);
+            background: #dcfce7;
             color: var(--accent-green);
         }
 
@@ -342,7 +316,7 @@
             position: relative;
             cursor: pointer;
             background: #eef2ff;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-light);
             transition: 0.2s;
         }
 
@@ -373,7 +347,7 @@
         }
 
         .zoom-icon {
-            background: linear-gradient(145deg, #ffffff, #e2e8f0);
+            background: #ffffff;
             width: 56px;
             height: 56px;
             border-radius: 10px;
@@ -382,13 +356,6 @@
             justify-content: center;
             font-size: 28px;
             color: #0f172a;
-            box-shadow: 0 6px 0 #000, 0 10px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.1s, box-shadow 0.1s;
-        }
-
-        .zoom-icon:active {
-            transform: translateY(6px);
-            box-shadow: 0 0 0 #000, 0 0 0 rgba(0, 0, 0, 0.3);
         }
 
         .lightbox {
@@ -416,12 +383,11 @@
             border-radius: 10px;
             object-fit: contain;
             border: 3px solid white;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
         }
 
         .lb-btn {
             position: absolute;
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+            background: rgba(255, 255, 255, 0.2);
             width: 60px;
             height: 60px;
             border-radius: 10px;
@@ -431,15 +397,13 @@
             font-size: 28px;
             color: white;
             cursor: pointer;
-            transition: transform 0.1s, box-shadow 0.1s;
             backdrop-filter: blur(8px);
             border: none;
-            box-shadow: 0 6px 0 rgba(255, 255, 255, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: background 0.2s ease;
         }
 
-        .lb-btn:active {
-            transform: translateY(6px);
-            box-shadow: 0 0 0 rgba(255, 255, 255, 0.4), 0 0 0 rgba(0, 0, 0, 0.3);
+        .lb-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .lb-close {
@@ -453,18 +417,10 @@
             transform: translateY(-50%);
         }
 
-        .lb-prev:active {
-            transform: translateY(calc(-50% + 6px));
-        }
-
         .lb-next {
             right: 32px;
             top: 50%;
             transform: translateY(-50%);
-        }
-
-        .lb-next:active {
-            transform: translateY(calc(-50% + 6px));
         }
 
         .animated-arrow-divider {
@@ -495,30 +451,28 @@
         .arrow-icon {
             font-size: 28px;
             color: var(--accent-cyan);
-            background: linear-gradient(145deg, #e0f2fe, #bae6fd);
+            background: #e0f2fe;
             width: 50px;
             height: 50px;
             border-radius: 10px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 6px 0 var(--accent-cyan), 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
         .cta-box {
-            background: linear-gradient(145deg, #f1f5f9, #e2e8f0);
+            background: #f1f5f9;
+            border: 1px solid var(--border-light);
             border-radius: 10px;
             padding: 70px 32px;
             text-align: center;
             margin: 20px 0 80px;
-            box-shadow: 0 12px 0 var(--border-light), 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
         .cta-box h2 {
             font-size: 44px;
             font-weight: 800;
             margin-bottom: 20px;
-            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .cta-box p {
@@ -585,11 +539,11 @@
     <nav class="navbar">
         <div class="container nav-flex">
             <div class="brand">
-                <span>Hamme Video Program</span>
+                <span>HAMME VIDEO PROGRAM</span>
             </div>
             <div class="nav-btn-wrapper">
-                <a href="https://wa.me/201099328127" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i>
-                    شراء البرنامج</a>
+                <a href="https://wa.me/201099328127" target="_blank" class="btn "><i class="fab fa-whatsapp"></i> شراء
+                    البرنامج</a>
             </div>
         </div>
     </nav>
@@ -601,10 +555,11 @@
             <p class="hero-description">بدون اشتراكات شهرية مزعجة. ادفع 25 دولار مرة واحدة فقط، واستخدم البرنامج لتحميل
                 الفيديوهات من يوتيوب، فيسبوك، انستجرام، تيك توك وإكس بأعلى جودة متوفرة. دقة 8K، 4K، واستخراج MP3.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/201099328127" target="_blank" class="btn btn-wa btn-large"><i
+                <a href="https://wa.me/201099328127" target="_blank" class="btn btn-large"><i
                         class="fab fa-whatsapp"></i> اطلب نسختك – 25$</a>
-                <a href="#features" class="btn btn-primary btn-large"><i class="fas fa-arrow-down"></i> شاهد
+                <a href="#features" class="btn btn-large"><i class="fas fa-arrow-down"></i> شاهد
                     المميزات</a>
+                <a href="#galleryGrid" class="btn btn-large"><i class="fas fa-images"></i> مشاهدة الصور</a>
             </div>
         </div>
     </header>
@@ -636,7 +591,7 @@
             </div>
             <div class="feature-card c-purple">
                 <div class="icon-box"><i class="fab fa-facebook"></i></div>
-                <div class="feature-text">حفظ مقاطع فيسبوك بسرعة فائقة وبضغطة واحدة بكل سهولة ويسر.</div>
+                <div class="feature-text">حفظ مقاطع فيسبوك بسرعة وبضغطة واحدة بكل سهولة ويسر.</div>
             </div>
             <div class="feature-card c-yellow">
                 <div class="icon-box"><i class="fab fa-twitter"></i></div>
@@ -859,8 +814,8 @@
         <div class="cta-box">
             <h2>ماذا تنتظر؟</h2>
             <p>تواصل معنا عبر واتساب للحصول على البرنامج فوراً – دفعة واحدة فقط 25$</p>
-            <a href="https://wa.me/201099328127" target="_blank" class="btn btn-wa btn-large"><i
-                    class="fab fa-whatsapp"></i> اطلب نسختك الآن</a>
+            <a href="https://wa.me/201099328127" target="_blank" class="btn btn-large"><i class="fab fa-whatsapp"></i>
+                اطلب نسختك الآن</a>
         </div>
     </div>
 
